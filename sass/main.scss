@@ -82,20 +82,26 @@ nav {
 
 header {
 	color: $white;
+		letter-spacing: 1px;
+		text-shadow: 2px 0 0 black;
+
+
 
 	h2 {
 		font-size: 30px;
+		font-weight: bold;
 	}
 
 	p {
 		font-size: 16px;
+	
 	}
 
 	.hero-img {
 		position: relative;
 		height: 100vh;
-		background-image: url("../img/header_640.jpg");
-		background-position: center;
+		background-image: url("../img/header_1920.jpg");
+		background-position: 35%;
 		background-size: cover;
 		// background-attachment: fixed;
 		z-index: 0;
@@ -105,7 +111,7 @@ header {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0, 0, 0, 0.4);
+		background-color: rgba(0, 0, 0, 0.6);
 		z-index: -10;
 	}
 
