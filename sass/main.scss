@@ -1,0 +1,208 @@
+@import "colors";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+//font-family: 'Lato', sans-serif;
+//font-family: 'Molle', cursive;
+html {
+    scroll-padding-top: 78px;
+}
+body {
+	position: relative;
+	// font-family: "Lato", sans-serif;
+	font-family: "Kalam", cursive;
+	background-color: #d8d9d0;
+}
+
+.underline {
+	margin: 0 auto 40px;
+	width: 60px;
+	height: 4px;
+	background-color: $main-color;
+}
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.shadow-bg {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav {
+	z-index: 1;
+	transition: background-color 0.6s;
+
+	.nav-link,
+	.fa-bars {
+		text-transform: uppercase;
+		color: #a65712;
+
+		padding: 10px;
+	}
+
+	.nav-link:hover {
+		color: $main-color;
+	}
+
+	.fa-solid {
+		color: #a65712;
+	}
+
+	.navbar-brand {
+		color: $white;
+		text-shadow: 2px 0 0 black;
+		font-size: 35px;
+		font-weight: 900;
+		z-index: 99;
+	}
+	.navbar-nav {
+		margin: center;
+	}
+
+	.active {
+		color: $main-color;
+	}
+
+	.cookie {
+		position: fixed;
+		top: -5%;
+		left: -2%;
+		font-size: 100px;
+		text-shadow: 2px 0 0 black;
+		z-index: 6;
+	}
+}
+
+header {
+	color: $white;
+
+	h2 {
+		font-size: 30px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.hero-img {
+		position: relative;
+		height: 100vh;
+		background-image: url("../img/header_640.jpg");
+		background-position: center;
+		background-size: cover;
+		// background-attachment: fixed;
+		z-index: 0;
+	}
+
+	.hero-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -10;
+	}
+
+	.hero-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+		padding: 10px;
+		text-align: center;
+		z-index: 5;
+	}
+
+	.cookie-header {
+		color: #a65712;
+		font-weight: 900;
+		font-size: 40px;
+
+		text-shadow: 2px 0 0 black;
+	}
+
+	.btn-outline-light {
+		text-transform: uppercase;
+	}
+
+	.fa-chevron-down {
+		position: absolute;
+		font-size: 30px;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+		color: $white;
+	}
+}
+
+.aboutus {
+	i {
+		margin-top: 20px;
+		font-size: 30px;
+		color: #a65712;
+	}
+
+	.aboutus-card-title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+
+	.aboutus-card-text {
+		font-size: 14px;
+	}
+	 .aboutus-hover {
+        transition: color 0.3s;
+    }
+	.aboutus-hover:hover {
+		color: $main-color;
+	}
+}
+
+@media (min-width: 992px) {
+	nav {
+		height: 76px;
+	
+		.nav-link {
+			font-size: 18px;
+		}
+
+		.navbar-brand {
+			font-size: 40px;
+		}
+
+		.cookie {
+			top: -4%;
+			left: 0%;
+			font-size: 200px;
+		}
+	}
+
+	header {
+		h2 {
+			font-size: 35px;
+		}
+
+		p {
+			font-size: 18px;
+		}
+
+		.hero-img {
+			background-image: url("../img/header_1920.jpg");
+		}
+
+		.cookie-header {
+			font-size: 50px;
+		}
+
+		.fa-chevron-down {
+			font-size: 40px;
+		}
+	}
+}
