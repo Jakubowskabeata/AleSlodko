@@ -11,7 +11,7 @@
 //font-family: 'Lato', sans-serif;
 //font-family: 'Molle', cursive;
 html {
-    scroll-padding-top: 78px;
+	scroll-padding-top: 78px;
 }
 body {
 	position: relative;
@@ -105,7 +105,7 @@ header {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0, 0, 0, 0.6);
+		background-color: rgba(0, 0, 0, 0.4);
 		z-index: -10;
 	}
 
@@ -157,9 +157,9 @@ header {
 	.aboutus-card-text {
 		font-size: 14px;
 	}
-	 .aboutus-hover {
-        transition: color 0.3s;
-    }
+	.aboutus-hover {
+		transition: color 0.3s;
+	}
 	.aboutus-hover:hover {
 		color: $main-color;
 	}
@@ -168,7 +168,7 @@ header {
 @media (min-width: 992px) {
 	nav {
 		height: 76px;
-	
+
 		.nav-link {
 			font-size: 18px;
 		}
