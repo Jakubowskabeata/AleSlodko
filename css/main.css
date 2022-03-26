@@ -21,7 +21,7 @@ body {
   margin: 0 auto 40px;
   width: 60px;
   height: 4px;
-  background-color: #155A77;
+  background-color: #4ab3be;
 }
 
 h2 {
@@ -47,7 +47,7 @@ nav .fa-bars {
 }
 
 nav .nav-link:hover {
-  color: #155A77;
+  color: #4ab3be;
 }
 
 nav .fa-solid {
@@ -67,7 +67,7 @@ nav .navbar-nav {
 }
 
 nav .active {
-  color: #155A77;
+  color: #4ab3be;
 }
 
 nav .cookie {
@@ -173,7 +173,19 @@ header .fa-chevron-down {
 }
 
 .aboutus .aboutus-hover:hover {
-  color: #155A77;
+  color: #4ab3be;
+}
+
+.ofert {
+  background-color: #011c26;
+}
+
+.ofert h2 {
+  color: #fff;
+}
+
+.special {
+  background-color: #d8d9d0;
 }
 
 @media (min-width: 992px) {

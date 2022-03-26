@@ -13,11 +13,12 @@
 html {
 	scroll-padding-top: 78px;
 }
+
 body {
 	position: relative;
 	// font-family: "Lato", sans-serif;
 	font-family: "Kalam", cursive;
-	background-color: #d8d9d0;
+	background-color: $background-light-color;
 }
 
 .underline {
@@ -26,6 +27,7 @@ body {
 	height: 4px;
 	background-color: $main-color;
 }
+
 h2 {
 	text-align: center;
 	text-transform: uppercase;
@@ -42,7 +44,7 @@ nav {
 	.nav-link,
 	.fa-bars {
 		text-transform: uppercase;
-		color: #a65712;
+		color: $cookie-color;
 
 		padding: 10px;
 	}
@@ -52,16 +54,17 @@ nav {
 	}
 
 	.fa-solid {
-		color: #a65712;
+		color: $cookie-color;
 	}
 
 	.navbar-brand {
-		color: $white;
+		color: $white-color;
 		text-shadow: 2px 0 0 black;
 		font-size: 35px;
 		font-weight: 900;
 		z-index: 99;
 	}
+
 	.navbar-nav {
 		margin: center;
 	}
@@ -81,11 +84,9 @@ nav {
 }
 
 header {
-	color: $white;
-		letter-spacing: 1px;
-		text-shadow: 2px 0 0 black;
-
-
+	color: $white-color;
+	letter-spacing: 1px;
+	text-shadow: 2px 0 0 black;
 
 	h2 {
 		font-size: 30px;
@@ -94,7 +95,6 @@ header {
 
 	p {
 		font-size: 16px;
-	
 	}
 
 	.hero-img {
@@ -127,7 +127,7 @@ header {
 	}
 
 	.cookie-header {
-		color: #a65712;
+		color: $cookie-color;
 		font-weight: 900;
 		font-size: 40px;
 
@@ -144,7 +144,7 @@ header {
 		bottom: 20px;
 		left: 50%;
 		transform: translateX(-50%);
-		color: $white;
+		color: $white-color;
 	}
 }
 
@@ -152,7 +152,7 @@ header {
 	i {
 		margin-top: 20px;
 		font-size: 30px;
-		color: #a65712;
+		color: $cookie-color;
 	}
 
 	.aboutus-card-title {
@@ -163,12 +163,34 @@ header {
 	.aboutus-card-text {
 		font-size: 14px;
 	}
+
 	.aboutus-hover {
 		transition: color 0.3s;
 	}
+
 	.aboutus-hover:hover {
 		color: $main-color;
 	}
+}
+
+.ofert {
+	background-color: $background-dark-color;
+	h2 {
+		color: $white-color;
+	}
+	// .card-img-top{
+	// max-height: 300px;
+	// max-width: 300px;
+	// }
+}
+
+.special {
+	background-color: $background-light-color;
+
+	// .card-img-bottom{
+	// 	max-width: 1400px;
+	// 	margin: auto  ;
+	// }
 }
 
 @media (min-width: 992px) {
@@ -199,7 +221,6 @@ header {
 			font-size: 18px;
 		}
 
-
 		.cookie-header {
 			font-size: 50px;
 		}
@@ -209,3 +230,10 @@ header {
 		}
 	}
 }
+// @media (min-width: 768px) {
+// 	.special {
+// 		.card-img-bottom {
+// 			background-image: url("../img/zamowienia-specjalne768.jpg");
+// 		}
+// 	}
+// }
