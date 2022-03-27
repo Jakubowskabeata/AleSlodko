@@ -179,7 +179,7 @@ header {
 		color: $white-color;
 	}
 	.card {
-		background-color: $background-light-color ;
+		background-color: $background-light-color;
 		.card-img-top {
 			margin: auto;
 			background-position: bottom;
@@ -197,6 +197,45 @@ header {
 	// 	max-width: 1400px;
 	// 	margin: auto  ;
 	// }
+}
+.team {
+	background-color: $background-dark-color;
+	h2 {
+		color: $white-color;
+	}
+	.carousel {
+		margin: auto;
+		max-width: 800px;
+		.carousel-indicators {
+			button {
+				border-radius: 50%;
+				width: 10px;
+				height: 10px;
+			}
+		}
+		.carousel-caption {
+			h3 {
+				font-size: 14px;
+			}
+			p {
+				font-size: 10px;
+			}
+		}
+	}
+}
+@media (min-width: 768px) {
+	.team {
+		.carousel {
+			.carousel-caption {
+				h3 {
+					font-size: 20px;
+				}
+				p {
+					font-size: 14px;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -235,11 +274,10 @@ header {
 			font-size: 40px;
 		}
 	}
+
+	.team {
+		.carousel-caption {
+			font-size: 14px;
+		}
+	}
 }
-// @media (min-width: 768px) {
-// 	.special {
-// 		.card-img-bottom {
-// 			background-image: url("../img/zamowienia-specjalne768.jpg");
-// 		}
-// 	}
-// }

@@ -202,6 +202,42 @@ header .fa-chevron-down {
   background-color: #d8d9d0;
 }
 
+.team {
+  background-color: #011c26;
+}
+
+.team h2 {
+  color: #fff;
+}
+
+.team .carousel {
+  margin: auto;
+  max-width: 800px;
+}
+
+.team .carousel .carousel-indicators button {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.team .carousel .carousel-caption h3 {
+  font-size: 14px;
+}
+
+.team .carousel .carousel-caption p {
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  .team .carousel .carousel-caption h3 {
+    font-size: 20px;
+  }
+  .team .carousel .carousel-caption p {
+    font-size: 14px;
+  }
+}
+
 @media (min-width: 992px) {
   nav {
     height: 76px;
@@ -228,6 +264,9 @@ header .fa-chevron-down {
   }
   header .fa-chevron-down {
     font-size: 40px;
+  }
+  .team .carousel-caption {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=main.css.map */
