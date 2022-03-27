@@ -184,6 +184,20 @@ header .fa-chevron-down {
   color: #fff;
 }
 
+.ofert .card {
+  background-color: #d8d9d0;
+}
+
+.ofert .card .card-img-top {
+  margin: auto;
+  background-position: bottom;
+  max-height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0px 3px 20px #011c26;
+          box-shadow: 0px 3px 20px #011c26;
+}
+
 .special {
   background-color: #d8d9d0;
 }

@@ -178,10 +178,16 @@ header {
 	h2 {
 		color: $white-color;
 	}
-	// .card-img-top{
-	// max-height: 300px;
-	// max-width: 300px;
-	// }
+	.card {
+		background-color: $background-light-color ;
+		.card-img-top {
+			margin: auto;
+			background-position: bottom;
+			max-height: 200px;
+			object-fit: cover;
+			box-shadow: 0px 3px 20px $background-dark-color;
+		}
+	}
 }
 
 .special {
