@@ -223,6 +223,21 @@ header {
 		}
 	}
 }
+
+.question {
+	.accordion-button:not(.collapsed) {
+		color: black;
+		background-color: $cookie-color;
+	}
+	.accordion-button:focus {
+		border-color: transparent;
+		box-shadow: none;
+	}
+}
+.contact{
+	background-color: $background-dark-color;
+	color:white;
+}
 @media (min-width: 768px) {
 	.team {
 		.carousel {
