@@ -1,4 +1,5 @@
 @import "colors";
+@import "animation";
 
 *,
 *::before,
@@ -8,15 +9,12 @@
 	padding: 0;
 }
 
-//font-family: 'Lato', sans-serif;
-//font-family: 'Molle', cursive;
 html {
 	scroll-padding-top: 78px;
 }
 
 body {
 	position: relative;
-	// font-family: "Lato", sans-serif;
 	font-family: "Kalam", cursive;
 	background-color: $background-light-color;
 }
@@ -34,7 +32,7 @@ h2 {
 }
 
 .shadow-bg {
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.9);
 }
 
 nav {
@@ -45,8 +43,6 @@ nav {
 	.fa-bars {
 		text-transform: uppercase;
 		color: $cookie-color;
-
-		padding: 10px;
 	}
 
 	.nav-link:hover {
@@ -100,10 +96,9 @@ header {
 	.hero-img {
 		position: relative;
 		height: 100vh;
-		background-image: url("../img/header_1920.jpg");
+		background-image: url("../img/header_700.jpg");
 		background-position: 35%;
 		background-size: cover;
-		// background-attachment: fixed;
 		z-index: 0;
 	}
 
@@ -124,14 +119,6 @@ header {
 		padding: 10px;
 		text-align: center;
 		z-index: 5;
-	}
-
-	.cookie-header {
-		color: $cookie-color;
-		font-weight: 900;
-		font-size: 40px;
-
-		text-shadow: 2px 0 0 black;
 	}
 
 	.btn-outline-light {
@@ -164,10 +151,6 @@ header {
 		font-size: 14px;
 	}
 
-	.aboutus-hover {
-		transition: color 0.3s;
-	}
-
 	.aboutus-hover:hover {
 		color: $main-color;
 	}
@@ -175,11 +158,14 @@ header {
 
 .ofert {
 	background-color: $background-dark-color;
+
 	h2 {
 		color: $white-color;
 	}
+
 	.card {
 		background-color: $background-light-color;
+
 		.card-img-top {
 			margin: auto;
 			background-position: bottom;
@@ -192,20 +178,19 @@ header {
 
 .special {
 	background-color: $background-light-color;
-
-	// .card-img-bottom{
-	// 	max-width: 1400px;
-	// 	margin: auto  ;
-	// }
 }
+
 .team {
 	background-color: $background-dark-color;
+
 	h2 {
 		color: $white-color;
 	}
+
 	.carousel {
 		margin: auto;
 		max-width: 800px;
+
 		.carousel-indicators {
 			button {
 				border-radius: 50%;
@@ -213,10 +198,12 @@ header {
 				height: 10px;
 			}
 		}
+
 		.carousel-caption {
 			h3 {
 				font-size: 14px;
 			}
+
 			p {
 				font-size: 10px;
 			}
@@ -229,15 +216,26 @@ header {
 		color: black;
 		background-color: $cookie-color;
 	}
+
 	.accordion-button:focus {
 		border-color: transparent;
 		box-shadow: none;
 	}
 }
-.contact{
+
+.contact {
 	background-color: $background-dark-color;
-	color:white;
+	color: white;
 }
+
+@media (min-width: 576px) {
+	header {
+		.hero-img {
+			background-image: url("../img/header_1920.jpg");
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	.team {
 		.carousel {
@@ -245,6 +243,7 @@ header {
 				h3 {
 					font-size: 20px;
 				}
+
 				p {
 					font-size: 14px;
 				}
