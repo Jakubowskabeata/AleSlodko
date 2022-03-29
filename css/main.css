@@ -125,8 +125,7 @@ nav {
   transition: background-color 0.6s;
 }
 
-nav .nav-link,
-nav .fa-bars {
+nav .nav-link {
   text-transform: uppercase;
   color: #a65712;
 }
@@ -135,14 +134,10 @@ nav .nav-link:hover {
   color: #4ab3be;
 }
 
-nav .fa-solid {
-  color: #a65712;
-}
-
 nav .navbar-brand {
   color: #fff;
   text-shadow: 2px 0 0 black;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 900;
   z-index: 99;
 }
@@ -151,17 +146,12 @@ nav .navbar-nav {
   margin: center;
 }
 
-nav .active {
-  color: #4ab3be;
+nav .navbar-toggler {
+  color: #a65712;
 }
 
-nav .cookie {
-  position: fixed;
-  top: -5%;
-  left: -2%;
-  font-size: 100px;
-  text-shadow: 2px 0 0 black;
-  z-index: 6;
+nav .active {
+  color: #4ab3be;
 }
 
 header {
@@ -341,12 +331,7 @@ header .fa-chevron-down {
     font-size: 18px;
   }
   nav .navbar-brand {
-    font-size: 40px;
-  }
-  nav .cookie {
-    top: -4%;
-    left: 0%;
-    font-size: 200px;
+    font-size: 33px;
   }
   header h2 {
     font-size: 35px;
